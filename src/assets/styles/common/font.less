@@ -1,0 +1,11 @@
+@font-dir: '~@/assets/fonts/';
+
+@font-names: 'shishanzhonghei', 'bahnschrift';
+
+each(@font-names, {
+  @font-face {
+    font-family: @value;
+    src: url('@{font-dir}@{value}.ttf')
+  }
+})
+
